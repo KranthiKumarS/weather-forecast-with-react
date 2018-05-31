@@ -1,6 +1,6 @@
 import { GET_DATA_SUCCESS, GET_DATA_REJECTED, API_KEY, API_URL } from "../constants"
 
-import axios from "axios"
+import axios from "axios" // This is a Promise based HTTP client use to asynchronous HTTP request to REST endpoints and perform CRUD operations. 
 
 export const getData = (region) => (dispatch) => {
   const { latitude, longitude } = region || {}

@@ -13,7 +13,7 @@ export default class App extends Component {
   // Fetches data by using geolocation. If the user blocks, or if the browser does not support the API, 
   // fallsback to default location of Hyderabad
   componentDidMount() {  
-    const detectLocation = new Promise((resolve,reject) => {
+    const detectLocation = new Promise((resolve,reject) => { // The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value.
       if ("geolocation" in navigator) {
         navigator.geolocation.getCurrentPosition((position) => {
           resolve(position.coords)

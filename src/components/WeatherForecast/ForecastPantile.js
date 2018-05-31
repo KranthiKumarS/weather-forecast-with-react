@@ -31,7 +31,7 @@ export default class ForecastPantile extends Component {
   // Fetches the icon using the icon code available in the forecast data.
   getIcon = data => `https://openweathermap.org/img/w/${data[0].weather[0].icon}.png`
 
-  // Gets a Minimum, Maximum and Avg Humidity temperatures of the day.
+  // Gets a Minimum, Maximum and Avg Humidity temperatures of the day. // Stateless component return only view.
   getInfo = (data, min=[], max=[], humidity=[]) => {
     data.map(item => {
       max.push(item.main.temp_max)
@@ -45,7 +45,7 @@ export default class ForecastPantile extends Component {
     }
 
     // Gets a day's average humdity
-    const avgHumdity = Math.round(humidity.reduce((curr, next) => curr + next) / humidity.length)
+    const avgHumdity = Math.round(humidity.reduce((curr, next) => curr + next) / humidity.length) //array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
 
     return (
       <div className="weather-info">
