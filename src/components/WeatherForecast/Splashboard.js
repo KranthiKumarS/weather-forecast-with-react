@@ -50,7 +50,7 @@ export default class Splashboard extends Component {
         </section>
         <span className="error">Please enter a valid city name!!</span>
         <header>
-          <h1 className="head-title">5-Day Weather Forecast</h1>
+          <h1 className="head-title">5-Day Weather Forecast !!!</h1>
           <h2 className="head-sub-title">{city} </h2>
         </header>
       </div>
