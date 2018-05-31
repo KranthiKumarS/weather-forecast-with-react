@@ -1,5 +1,5 @@
 # 5-Day Weather Forecast
-A simple application to display 5-day weather forecast using the OpenWeatherMap API. Built on top of [create-react-app Starter Kit](https://github.com/facebook/create-react-app).
+A simple application to display 5-day weather forecast using the OpenWeatherMap API. Built on top of [create-react-app Starter Kit](https://github.com/facebook/create-react-app)
 App is developed with Redux and Sass. Configured with Webpack. Testing environment is [jest-enzyme]. 
 
 ### Demo
